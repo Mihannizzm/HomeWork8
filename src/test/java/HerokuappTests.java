@@ -37,7 +37,7 @@ public class HerokuappTests extends BaseTest {
     public void keyPressesTest() {
         MainPage.openMainPage();
         MainPage.clickElementOnMainPage("Key Presses");
-        KeyPressesPage.checkEnteredKey();
+        KeyPressesPage.checkEnteredKey("a", "TAB");
     }
 
     @Test
