@@ -17,7 +17,7 @@ public class KeyPressesPage {
         System.out.println("Ввожу символ: " + symbol);
         String symbolForCheck = symbol.toUpperCase();
         $(byText("You entered: " + symbolForCheck)).shouldBe(Condition.visible);
-        System.out.println("Отображается текст: \"You entered: "+ symbolForCheck + "\"");
+        System.out.println("Отображается текст: \"You entered: " + symbolForCheck + "\"");
 
         inputText.sendKeys(Keys.valueOf(key));
         System.out.println("Нажимаю клавишу: " + key);
